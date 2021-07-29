@@ -107,7 +107,7 @@
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-junit</artifactId>
         <version>6.10.4</version>
-        <scope>test</scope>
+        <scope>compiler</scope>
     </dependency>
     
  <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
@@ -115,7 +115,7 @@
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-api</artifactId>
     <version>5.8.0-M1</version>
-    <scope>test</scope>
+    <scope>compiler</scope>
 </dependency>
  
 
