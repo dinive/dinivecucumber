@@ -1,42 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
-  
-  
-<!-- Plug-ins required for executing Tests  -->
 
-
-<!-- Plug-ins required for executing Tests  -->
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			
-			
-		<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18.1</version>
-				<configuration>
-						<includes>
-						<exclude>**/*testrunner.java</exclude>
-						</includes>
-				    	</configuration>
-			</plugin>
-		
-		</plugins>
-	
-	</build>
-
-	 
-	 
 
   <groupId>Cucumber</groupId>
   <artifactId>Cucumber</artifactId>
@@ -58,10 +23,6 @@
   
     </dependency>
     
-    
-
-  
-
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-core</artifactId>
@@ -158,7 +119,34 @@
 </dependency>
  
 
-
-
   </dependencies>
+  
+      -- Plug-ins required for executing Tests  -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			
+			
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+						<includes>
+						<exclude>**/*testrunner.java</exclude>
+						</includes>
+				    	</configuration>
+			</plugin>
+		
+		</plugins>
+		</build>
+  
+   
 </project>
