@@ -121,7 +121,6 @@
 
   </dependencies>
   
-      -- Plug-ins required for executing Tests  -->
 	<build>
 		<plugins>
 			<plugin>
